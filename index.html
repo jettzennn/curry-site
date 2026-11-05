@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page Stephen Curry, point guard Golden State Warriors."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Stephen Curry — Golden State Warriors</title>
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#sisi">Sisi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="hero" id="beranda">
+      <h1 class="hero__title">CURRY</h1>
+      <img
+        class="hero__cutout"
+        src="images/curry-cutout.png"
+        alt="Stephen Curry"
+      />
+      <p class="hero__desc">
+        Stephen Curry adalah point guard Golden State Warriors yang mengubah
+        cara basket dimainkan lewat tembakan tiga angka dari jarak jauh.
+      </p>
+    </section>
+
+    <section class="gallery" id="galeri">
+      <header class="gallery__header">
+        <h2 class="gallery__title reveal">Galeri</h2>
+        <p class="gallery__sub">Momen terbaik di lapangan</p>
+      </header>
+
+      <div class="gallery__rows">
+        <!-- Baris 1: g1-g7, animasi ke kiri -->
+        <div class="gallery__row gallery__row--left">
+          <div class="gallery__track">
+            <div class="gallery__card">
+              <img src="images/gallery/g1.jpg" alt="Momen Curry 1" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g2.jpg" alt="Momen Curry 2" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g3.jpg" alt="Momen Curry 3" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g4.jpg" alt="Momen Curry 4" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g5.jpg" alt="Momen Curry 5" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g6.jpg" alt="Momen Curry 6" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g7.jpg" alt="Momen Curry 7" />
+            </div>
+            <!-- Duplikat untuk loop mulus -->
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g1.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g2.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g3.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g4.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g5.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g6.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g7.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Baris 2: g8-g14, animasi ke kanan, digeser 80px -->
+        <div class="gallery__row gallery__row--right">
+          <div class="gallery__track">
+            <div class="gallery__card">
+              <img src="images/gallery/g8.jpg" alt="Momen Curry 8" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g9.jpg" alt="Momen Curry 9" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g10.jpg" alt="Momen Curry 10" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g11.jpg" alt="Momen Curry 11" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g12.jpg" alt="Momen Curry 12" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g13.jpg" alt="Momen Curry 13" />
+            </div>
+            <div class="gallery__card">
+              <img src="images/gallery/g14.jpg" alt="Momen Curry 14" />
+            </div>
+            <!-- Duplikat untuk loop mulus -->
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g8.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g9.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g10.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g11.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g12.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g13.jpg" alt="" />
+            </div>
+            <div class="gallery__card" aria-hidden="true">
+              <img src="images/gallery/g14.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="sisi">
+      <h2 class="cards__title reveal">Tiga Sisi Curry</h2>
+
+      <div class="cards__grid">
+        <article class="card reveal">
+          <div class="card__img">
+            <img src="images/cards/c1.jpg" alt="The Shooter" />
+          </div>
+          <h3 class="card__name">The Shooter</h3>
+          <p class="card__desc">
+            Penembak tiga angka paling berpengaruh di era modern.
+          </p>
+          <div class="card__tags">
+            <span class="tag">Tiga Angka</span>
+            <span class="tag">Akurasi</span>
+            <span class="tag">Rekor</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img">
+            <img src="images/cards/c2.jpg" alt="The Champion" />
+          </div>
+          <h3 class="card__name">The Champion</h3>
+          <p class="card__desc">
+            Pemimpin Warriors dalam perburuan gelar juara NBA.
+          </p>
+          <div class="card__tags">
+            <span class="tag">Juara</span>
+            <span class="tag">Kepemimpinan</span>
+            <span class="tag">Finals</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img">
+            <img src="images/cards/c3.jpg" alt="The Playmaker" />
+          </div>
+          <h3 class="card__name">The Playmaker</h3>
+          <p class="card__desc">
+            Kreatif mengatur serangan dan membuka ruang untuk tim.
+          </p>
+          <div class="card__tags">
+            <span class="tag">Ball Handling</span>
+            <span class="tag">Visi</span>
+            <span class="tag">Tim</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer" id="kontak">
+      <p>Dibuat sebagai latihan desain. Gambar milik pemilik masing-masing.</p>
+      <p class="footer__copy">© 2026</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

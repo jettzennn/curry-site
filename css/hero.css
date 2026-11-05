@@ -1,0 +1,126 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  background: linear-gradient(to bottom, transparent 0%, var(--bg) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: clamp(90px, 22vw, 320px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  user-select: none;
+  opacity: 0;
+  filter: blur(20px);
+}
+
+body.loaded .hero__title {
+  animation: heroTitleIn 1.2s ease-out forwards;
+}
+
+.hero__cutout {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 85%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  z-index: 2;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+  opacity: 0;
+}
+
+body.loaded .hero__cutout {
+  animation: heroCutoutIn 1.4s ease-out 0.3s forwards;
+}
+
+.hero__desc {
+  position: absolute;
+  left: 24px;
+  bottom: 40px;
+  max-width: 260px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  z-index: 3;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes heroTitleIn {
+  from {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes heroCutoutIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 40px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__title {
+    font-size: clamp(90px, 24vw, 320px);
+  }
+  .hero__desc {
+    left: 16px;
+    bottom: 32px;
+    max-width: 200px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__title {
+    opacity: 1;
+    filter: none;
+    animation-duration: 0.01s;
+    animation-delay: 0s;
+  }
+  .hero__cutout {
+    opacity: 1;
+    animation-duration: 0.01s;
+    animation-delay: 0s;
+  }
+}

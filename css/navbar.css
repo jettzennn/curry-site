@@ -1,0 +1,54 @@
+.navbar {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  white-space: nowrap;
+  transition:
+    background 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.navbar.scrolled {
+  background: rgba(11, 16, 32, 0.7);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.25s var(--ease);
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+  color: var(--yellow);
+}
+
+.navbar a:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    top: 12px;
+    gap: 14px;
+    padding: 8px 16px;
+  }
+  .navbar a {
+    font-size: 12px;
+  }
+}

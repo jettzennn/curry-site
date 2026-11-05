@@ -1,0 +1,17 @@
+:root {
+  --bg: #0b1020;
+  --surface: #121a33;
+  --blue: #1d428a;
+  --yellow: #ffc72c;
+  --text: #ffffff;
+  --muted: #b8c0d9;
+  --border: rgba(255, 255, 255, 0.15);
+  --radius: 12px;
+  --font: "Poppins", sans-serif;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 48px;
+  --space-5: 96px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
